@@ -6,6 +6,7 @@ public class AdivinarNumero {
 
 	public static void main(String[] args) {
 
+		// para leer por teclado
 		Scanner teclado = new Scanner(System.in);
 
 		int numeroObjetivo = (int) (Math.random() * 10 + 1);
@@ -24,7 +25,9 @@ public class AdivinarNumero {
 			}
 
 		} while (numeroObjetivo != numeroUsuario);
-
+		
+		// al terminar cerramos el scanner
+		teclado.close();
 	}
 
 }
